@@ -1,10 +1,43 @@
+const form = document.getElementById('formulario');
 
-function genPDF(){
-    var doc=new jsPDF();
-    let mensaje=document.getElementById('escribime').value;
-    doc.text(20,20,mensaje);
-    doc.addPage();
-    doc.text(20,20,'Mi trabajo!!');
-    doc.save('Test.pdf');
-}
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  console.log(Object.fromEntries(formData.entries()));
+  alert('Gracias por utilizar nuestro servicio!');
+  form.reset();
+});
 
+
+//Generador de formulario//
+document.getElementById("generar-pdf").addEventListener("click", function() {
+  // crea un nuevo documento PDF
+
+  var doc = new jsPDF();
+
+  
+
+  
+  var producto = document.getElementById("producto").value;
+  var cantidad = document.getElementById("cantidad").value;
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var telefono = document.getElementById("telefono").value;
+  var direccion = document.getElementById("direccion").value;
+  
+
+  
+  doc.text("Datos para su presupuesto :", 50, 10)
+  doc.text("Producto: " + producto, 10, 20 );
+  doc.text("Cantidad: " + cantidad, 10, 30 );
+  doc.text("Nombre: " + nombre, 10, 40);
+  doc.text("Email: " + email, 10, 50 );
+  doc.text("Telefono: " + telefono, 10, 60 );
+  doc.text("Direccion: " + direccion, 10, 70 );
+  doc.text("Muchas gracias por confiar en nosotros !!!", 50, 150);
+
+
+ 
+  // guarda el archivo PDF
+  doc.save("formulario.pdf");
+});

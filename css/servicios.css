@@ -1,0 +1,55 @@
+/* Estilos para el título */
+h1 {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Estilos para los campos del formulario */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el botón */
+  button[type="submit"] {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el botón al pasar el mouse por encima */
+  button[type="submit"]:hover {
+    background-color: #16a085;
+  }
+  
+  /* Estilo para los campos que tienen que estar rellenos */
+  input:required,
+  select:required,
+  textarea:required {
+    border-color: #e74c3c;
+  }
+  
+
