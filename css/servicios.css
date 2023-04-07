@@ -1,9 +1,11 @@
 /* Estilos para el título */
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: bold;
+    color: blue;
   }
   
   /* Estilos para los campos del formulario */
