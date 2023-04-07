@@ -28,8 +28,10 @@ h3{
     display: flex;
     justify-content: center;
 }
-iframe{
-    display: inline-flex;
+#servicos-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     
 }
