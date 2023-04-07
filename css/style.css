@@ -13,6 +13,7 @@ body{width: 100%;}
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -44,6 +45,7 @@ body{width: 100%;}
     font-size: 6mm;
     margin: 5%;
     text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -113,8 +115,9 @@ body{width: 100%;}
     transition: .5s;
     }
    
-   
-
+    *h3{
+        color: #ff0000;
+    }
 @media screen and (max-width: 600px){
     #header{width:100vw; height: 8%;}
     #video-background{width: 100vw;}
