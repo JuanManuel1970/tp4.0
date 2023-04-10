@@ -29,6 +29,14 @@ h3{
     justify-content: center;
     font-size: 24px;
 }
+img.chica{
+
+width: 200px;
+height: 200px;
+align-items: center;
+
+}
+
 
 /*servicios*/
 #servicos-2{
