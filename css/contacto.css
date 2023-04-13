@@ -1,28 +1,38 @@
+html,body{
+    background: url("../imagenes/fondocontacto.png")no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;}
 
 .contactanos{ 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container-form{
-width: 100%;
-max-width: 1100px;
+width: 100vh;
 margin: auto;
 display: grid;
 grid-template-columns: repeat(2,1fr);
 grid-gap: 50px;
 margin-top: 90px;
 }
+
 .container-form h2{
 margin-bottom: 15px;
-font-size: 35px;
+font-size: 45px;
 }
+
 .container-form p{
 font-size: 17px;
 line-height: 1.6;
 margin-bottom: 30px;
 }
+
 .container-form a{
 font-size: 17px;
 display: inline-block;
@@ -32,49 +42,63 @@ margin-bottom: 15px;
 color: #000000;
 font-weight: 700;
 }
+
 .container-form a i{
 color: orange;
 margin-right: 10px;
 }
+
 .container-form form .campo, textarea{
-width: 100%;
-padding: 15px 10px;
-font-size: 15px;
-border: 2px solid orange;
-margin-bottom: 20px;
-border-radius: 3px;
-outline: 0px;
-background-color: rgb(214, 208, 208);
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5em 1em;
+    font-size: 1em;
+    border: 2px solid orange;
+    margin-bottom: 2em;
+    border-radius: 3px;
+    outline: 0px;
+    background-color: transparent;
 }
+
 .container-form form textarea{
 max-width: 530px;
 min-width: 530px;
 min-height: 140px;
 max-height: 150px;
 } 
-.container-form form .btn-enviar{
-padding: 15px;
-font-size: 16px;
-border: none;
-outline: 0px;
-background-color: rgb(214, 208, 208);
-color: rgb(238, 23, 7);
-border-radius: 3px;
-cursor: pointer;
-transition: 0.7s;
 
+.container-form form .btn-enviar{
+    padding: 1.5em;
+    font-size: 1em;
+    border: none;
+    outline: 0px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 10px;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
 }
 
 
 
 .container-form .btn-enviar:hover{
-background: rgb(131, 140, 156);
-color: rgb(5, 5, 5);
-font: bold;
+    background:#049918;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
-body{
-    background: url("../imagenes/fondocontacto.jfif");
-    background-size: cover;
+@media (min-width: 768px) {
+    .container-form {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
+@media (max-width: 480px) {
+    .container-form form .campo, textarea {
+        font-size: 0.9em;
+    }
+}
