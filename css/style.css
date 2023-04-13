@@ -3,6 +3,8 @@
 
 body{width: 100%;background-color: #ffffff;}
 
+
+
 #header{
     z-index: 2;
     position: fixed;
@@ -94,10 +96,21 @@ section {
     margin: 5%;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    }
+
+   
+
+
+.parrafoUNo:first-letter {
+  font-size: 2.3em;
+  font-weight: bold;
+  
 }
-
-
-
+.parrafoUNo{
+  font-size: 6mm;
+  text-align: center;
+}
 
 
 
@@ -202,6 +215,51 @@ footer{
       
     }   
 
+    .product-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .product-card {
+      width: 30%;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    
+    .product-card h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .product-card p {
+      margin-top: 0.5rem;
+    }
+    
+    .product-card button {
+      margin-top: 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    .product-card button:hover {
+      background-color: #049918;
+    }
     
     
       
