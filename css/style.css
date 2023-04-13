@@ -30,6 +30,21 @@ h3{
     font-size: 24px;
 }
 
+.timon {
+border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 
