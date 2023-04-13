@@ -4,6 +4,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 .container-form{
 width: 100%;
 max-width: 1100px;
@@ -57,7 +58,7 @@ font-size: 16px;
 border: none;
 outline: 0px;
 background-color: rgb(214, 208, 208);
-color: lightsalmon;
+color: rgb(238, 23, 7);
 border-radius: 3px;
 cursor: pointer;
 transition: 0.7s;
@@ -72,5 +73,8 @@ color: rgb(5, 5, 5);
 font: bold;
 }
 
-
+body{
+    background: url("../imagenes/fondocontacto.jfif");
+    background-size: cover;
+}
 
