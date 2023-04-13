@@ -35,6 +35,9 @@ document.getElementById("generar-pdf").addEventListener("click", function() {
   doc.text("Telefono: " + telefono, 10, 60 );
   doc.text("Direccion: " + direccion, 10, 70 );
   doc.text("Muchas gracias por confiar en nosotros !!!", 50, 150);
+  doc.text("<<<<<<NAUTICA NEUQUEN>>>>>>", 50, 170);
+  doc.text("escuelanautica@gmail.com  tel:297-456783", 50, 200);
+ 
 
 
  
